@@ -1,0 +1,23 @@
+Steps performed":
+
+Load Data: Read the diabetes dataset into a Pandas DataFrame and check its structure.
+Check for Missing Values: Verify if the dataset contains any missing values.
+Visualize Correlations: Generate a heatmap to analyze feature correlations.
+Convert Target Variable: Ensure the target column (diabetes) is in integer format.
+Count Target Classes: Count the number of diabetic (1) and non-diabetic (0) cases.
+Split Data: Divide the dataset into training (70%) and testing (30%) sets.
+Identify Missing (Zero) Values: Check how many rows contain zero values for key features.
+Handle Missing Values: Replace zeros in specific columns with the mean of that feature.
+Train Random Forest Model:
+Initialize a Random Forest Classifier
+Train the Random Forest model on the training data
+Make predictions on the test set and calculate accuracy
+Optimize Hyperparameters for XGBoost:
+Define a range of hyperparameters
+Use RandomizedSearchCV to find the best combination
+Measure time taken for tuning
+Evaluate XGBoost Model:
+Get the best model from the search
+Perform cross-validation with the best model
+Print the average score across folds
+This process involves training and evaluating both the Random Forest and XGBoost models for diabetes prediction.
